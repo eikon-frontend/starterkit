@@ -25,6 +25,7 @@
     "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.1.1",
     "flickity": "^2.2.2",
-    "masonry-layout": "^4.2.2"
+    "masonry-layout": "^4.2.2",
+    "scrollmagic": "^2.0.8"
   }
 }
