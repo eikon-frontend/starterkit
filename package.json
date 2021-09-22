@@ -1,0 +1,17 @@
+{
+  "name": "eikon-parcel-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/nbuntsch/eikon-parcel-starter.git"
+  },
+  "keywords": [],
+  "author": "eikon frontend development team",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/nbuntsch/eikon-parcel-starter#readme"
+}
