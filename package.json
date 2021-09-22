@@ -27,6 +27,7 @@
     "flickity": "^2.2.2",
     "masonry-layout": "^4.2.2",
     "scrollmagic": "^2.0.8",
-    "swiper": "^6.8.4"
+    "swiper": "^6.8.4",
+    "three": "^0.132.2"
   }
 }
