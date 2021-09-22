@@ -13,5 +13,8 @@
   "keywords": [],
   "author": "eikon frontend development team",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/nbuntsch/eikon-parcel-starter#readme"
+  "homepage": "https://bitbucket.org/nbuntsch/eikon-parcel-starter#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
