@@ -10,7 +10,7 @@
 Cloner le repository git
 
 ```
-git clone git@bitbucket.org:nbuntsch/eikon-parcel-starter.git <nom du projet>
+git clone git@github.com:eikon-frontend/starterkit.git <nom du projet>
 ```
 
 Se rendre dans le dossier du projet, puis installer les dépendances avec NPM
