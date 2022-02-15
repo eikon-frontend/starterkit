@@ -142,6 +142,27 @@ Inclure le JS depuis un fichier JS
 import "@fortawesome/fontawesome-free/js/all.js";
 ```
 
+### [GSAP](https://greensock.com/gsap/)
+
+Installer le paquet avec NPM
+
+```
+npm install gsap
+```
+
+Inclure le JS depuis un fichier JS
+
+```js
+import gsap from "gsap";
+```
+
+Inclure les éventuels plugins
+
+```js
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+```
+
 ### [Masonry](https://masonry.desandro.com)
 
 Installer le paquet avec NPM
