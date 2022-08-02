@@ -14,6 +14,6 @@
     }
   },
   "extensions": {
-    "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+    "recommendations": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint", "Zignd.html-css-class-completion"]
   }
 }
