@@ -3,9 +3,7 @@
 // ==================================== */
 
 :root {
-
 }
-
 
 /* ====================================
 // reset rules
@@ -30,12 +28,12 @@ a {
   color: inherit;
 }
 
-img, video {
+img,
+video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: text-top;
 }
-
 
 /* ====================================
 // base rules
