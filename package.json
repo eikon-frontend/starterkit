@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "Web projects starterkit for eikon studenrs",
   "scripts": {
+    "clean:output": "rimraf dist",
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "npm run clean:output && parcel build src/index.html --public-url '.'"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "parcel": "^2.6.2",
     "parcel-namer-rewrite": "^2.0.0-rc.2",
     "posthtml-include": "^1.7.1",
+    "rimraf": "^3.0.2",
     "sass": "^1.42.1"
   }
 }
