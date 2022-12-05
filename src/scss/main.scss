@@ -1,0 +1,383 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* ====================================
+// css variables
+// ==================================== */
+
+:root {
+}
+
+/* ====================================
+// reset rules
+// ==================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+/* ====================================
+// base rules
+// ==================================== */
+
+body {
+  font-family: 'Jost', Helvetica, Arial, sans-serif;
+  color: rgb(25, 24, 23);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(25, 24, 23);
+}
+
+h1 {
+  margin: 0;
+}
+
+
+/* ====================================
+// header
+// ==================================== */
+
+.header {
+  height: 60px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  margin-bottom: 20px;
+}
+
+.header-logo {
+  height: 60px;
+  width: 60px;
+  padding: 10px 0;
+  // padding: 0;
+}
+
+.header-logo-image {
+  height: 100%;
+  width: auto;
+}
+
+.header-nav {
+  flex-grow: 3;
+}
+
+.header-utility {
+  width: 100%;
+  flex-grow: 3;
+}
+
+@media screen and (min-width: 992px) {
+  .header-utility {
+    flex-shrink: 0;
+    flex-grow: 10;
+  }
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  height: 100%;
+}
+
+.menu-item {
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  margin: 5px 20px;
+  padding-bottom: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.menu-item a:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color:rgb(25, 24, 23);
+  transform-origin: center left;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.current-menu-item a:after,
+.menu-item:hover a:after {
+  transform: scaleX(1);
+}
+
+.utility-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+
+.utility-item {
+  margin: 5px 5px;
+}
+
+
+/* ====================================
+// header hero
+// ==================================== */
+
+.header-hero {
+  overflow-x: hidden;
+}
+
+.header-hero-card {
+  height: 40vh;
+}
+
+.header-hero-card:nth-of-type(-n + 2) {
+  height: 80vh;
+}
+
+.header-hero-card-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 2rem;
+}
+
+@media screen and (min-width: 992px) {
+  .header-hero-card-wrapper {
+    padding: 4rem;
+  }
+}
+
+.header-hero-card-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 40%;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-hero-card-image {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-hero-card:nth-of-type(1) .header-hero-card-image,
+.header-hero-card:nth-of-type(1) .header-hero-card-wrapper::after {
+  border-radius: 0 5px 5px 0;
+}
+
+.header-hero-card:nth-of-type(2) .header-hero-card-image,
+.header-hero-card:nth-of-type(2) .header-hero-card-wrapper::after {
+  border-radius: 5px 0 0 5px;
+}
+
+.header-hero-card-info {
+  height: 100%;
+}
+
+.header-hero-card-info h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .header-hero-card-info h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+.header-hero-card-info p {
+  margin-top: 1.5rem;
+  line-height: 1.625rem;
+  letter-spacing: 0.05rem;
+}
+
+
+/* ====================================
+// main content
+// ==================================== */
+
+.main-content {
+  background-color: rgb(252, 250, 238);
+}
+
+
+/* ====================================
+// product categories
+// ==================================== */
+
+.product-categories {
+  padding: 4rem 0;
+}
+
+.product-category {
+}
+
+.product-category-wrapper {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .product-category-wrapper {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.product-category-wrapper::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 40%;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.product-category-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+  
+}
+
+.product-category-wrapper:hover .product-category-image {
+  transform: scale(1.1);
+}
+
+.product-category-info {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.product-category-info p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+/* ====================================
+// catchline
+// ==================================== */
+
+.catchline {
+  padding: 4rem 0;
+}
+
+.catchline-wrapper p {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.catchline-wrapper h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .catchline-wrapper h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
+
+
+/* ====================================
+// video trailer
+// ==================================== */
+
+.trailer {
+  padding: 4rem 0;
+}
+
+
+
+/* ====================================
+// utility classes
+// ==================================== */
+
+.button {
+  padding: 10px 32px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05rem;
+  background-color: rgb(255, 195, 86);
+  color: rgb(25, 24, 23);
+}
+
+.button-rounded {
+  border-radius: 24px;
+}
+
+
+.text-white {
+  color: white;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

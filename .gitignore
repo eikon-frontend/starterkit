@@ -1,3 +1,10 @@
-.parcel-cache
-dist
-node_modules
+# OSX hidden config file
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# Parcel related files
+dist/
+.cache/
+.parcel-cache/
