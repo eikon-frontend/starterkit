@@ -1,6 +1,6 @@
 {
   "name": "eikon-parcel-starter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Web projects starterkit for eikon studenrs",
   "scripts": {
     "clean:output": "rimraf dist",
