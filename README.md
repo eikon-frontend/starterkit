@@ -28,13 +28,13 @@ Compiler la SCSS, aggréger le JS, lancer le serveur et écouter les changements
 npm run dev
 ```
 
-Compiler pour la production pour une seule page HTML
+Compiler pour la production d'une seule page HTML
 
 ```
 npm run build
 ```
 
-Compiler pour la production pour plusieures pages HTML
+Compiler pour la production de plusieures pages HTML
 
 ```
 npm run build-all
