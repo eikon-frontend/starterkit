@@ -6,6 +6,9 @@
     "posthtml-extend": {
       "root": "src",
       "strict": false
+    },
+    "posthtml-inline-svg": {
+      "cwd": "src"
     }
   }
 }

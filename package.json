@@ -34,6 +34,7 @@
     "parcel-namer-rewrite": "^2.10.3-rc.2",
     "posthtml-extend": "^0.6.5",
     "posthtml-include": "^2.0.1",
+    "posthtml-inline-svg": "^0.2.0",
     "rimraf": "^6.0.1",
     "sass": "^1.69.5"
   }
