@@ -63,13 +63,13 @@ Inclure un fichier _\_base.scss_ depuis un fichier SCSS
 Inclure un fichier _main.js_ depuis un fichier HTML
 
 ```html
-<script src="js/main.js"></script>
+<script src="js/main.js" type="module"></script>
 ```
 
 Inclure un fichier _carousel.js_ depuis un fichier JS
 
 ```js
-require("./carousel.js");
+import "./carousel.js";
 ```
 
 ## Exemples d'utilisation de packages externes
@@ -91,7 +91,7 @@ import AOS from "aos";
 Inclure la CSS depuis un fichier SCSS
 
 ```SCSS
-@import "aos/dist/aos.css";
+@import "../../node_modules/aos/dist/aos.css";
 ```
 
 ### [Bootstrap](https://getbootstrap.com)
@@ -125,7 +125,7 @@ import Flickity from "flickity";
 Inclure la CSS depuis un fichier SCSS
 
 ```SCSS
-@import "flickity/dist/flickity.css";
+@import "../../node_modules/flickity/dist/flickity.css";
 ```
 
 ### [Font Awesome](https://fontawesome.com/)
@@ -202,7 +202,8 @@ npm install swiper@6
 Inclure le JS depuis un fichier JS
 
 ```js
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 
 Swiper.use([Navigation, Pagination]);
 ```
