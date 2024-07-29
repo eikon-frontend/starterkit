@@ -1,7 +1,7 @@
 {
   "name": "eikon-parcel-starter",
   "version": "1.0.0",
-  "description": "Web projects starterkit for eikon studenrs",
+  "description": "Web projects starterkit for eikon students",
   "scripts": {
     "clean:output": "rimraf dist",
     "clean:cache": "rimraf .parcel-cache",
@@ -30,10 +30,10 @@
     }
   },
   "devDependencies": {
-    "parcel": "^2.10.3",
+    "parcel": "^2.12.0",
     "parcel-namer-rewrite": "^2.10.3-rc.2",
-    "posthtml-include": "^1.7.4",
-    "rimraf": "^3.0.2",
+    "posthtml-include": "^2.0.1",
+    "rimraf": "^6.0.1",
     "sass": "^1.69.5"
   }
 }
