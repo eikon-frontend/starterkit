@@ -44,6 +44,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^5.1.1",
     "flickity": "^3.0.0",
+    "gsap": "^3.12.5",
     "masonry-layout": "^4.2.2",
     "scrollmagic": "^2.0.8",
     "swiper": "^11.1.8",
